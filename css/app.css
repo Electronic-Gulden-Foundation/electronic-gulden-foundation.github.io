@@ -1,0 +1,21 @@
+.blockimage-image {
+	width:      100%;
+	margin-top: 5px;
+}
+.blockimage-wrapper {
+	float:    left;
+	position: relative;
+	width:    100%;
+}
+.blockimage-caption {
+	position: absolute;
+	bottom:   0;
+	width:    100%;
+}
+.blockimage-caption p {
+	margin:           0;
+	color:            #D0D0D0;
+	padding:          5px;
+	background-color: black;
+	opacity:          0.8;
+}

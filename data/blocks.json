@@ -1,0 +1,24 @@
+{
+    "blocks" : [
+        {
+            "content" : "Test 123",
+            "image"   : "http://www.yulook.nl/afbeeldingen/andernieuws/wtf.gif"
+        },
+        {
+            "content" : "Egulden Downloaden",
+            "image"   : "http://www.yulook.nl/afbeeldingen/andernieuws/wetenschap24.gif"
+        },
+        {
+            "content" : "Egulden kopen",
+            "image"   : "http://www.yulook.nl/afbeeldingen/andernieuws/glamour.gif"
+        },
+        {
+            "content" : "Doneren",
+            "image"   : "http://www.yulook.nl/afbeeldingen/andernieuws/endandit.gif"
+        },
+        {
+            "content" : "Campagnes",
+            "image"   : "http://www.yulook.nl/afbeeldingen/andernieuws/kennislink.gif"
+        }
+    ]
+}
