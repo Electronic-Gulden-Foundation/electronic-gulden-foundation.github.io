@@ -1,0 +1,27 @@
+<div id="footer" class="container-fluid">
+	<div class="container">
+		<div class="col-md-6">
+			<h3>Donaties</h3>
+			<p>
+				De Foundation is afhankelijk van de goodwill van de gemeenschap.
+				Donaties zullen worden gebruikt als beloning voor software development of als bonus voor acties die de e-Gulden promoten.
+				U kunt uw bijdrage op onze e-Gulden of Bitcoin wallet overmaken.
+			</p>
+
+			<p><strong>EFL: {{ footerCtrl.eguldenDonationAddress }}</strong></p>
+			<p><strong>BTC: {{ footerCtrl.bitcoinDonationAddress }}</strong></p>
+
+		</div>
+
+		<div class="col-md-6">
+			<div class="col-md-{{ (12 / footerCtrl.linkCols.length) }}" ng-repeat="col in footerCtrl.linkCols">
+				<h3>{{ col.title }}</h3>
+				<ul>
+					<li ng-repeat="link in col.links">
+						<a href="{{ link.url }}">{{ link.title }}</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
