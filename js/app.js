@@ -1,6 +1,9 @@
 'use strict';
 
-var app = angular.module('egulden', [
-    'ngRoute',
-    'egulden.controllers'
-]);
+(function() {
+    angular.module('egulden', [
+        'ngRoute',
+        'egulden.controllers',
+        'egulden.directives.partials'
+    ])
+})();

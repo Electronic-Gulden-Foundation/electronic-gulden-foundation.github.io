@@ -1,8 +1,47 @@
-<div ng-repeat="block in blocks">
-	<div class="col-xs-12 col-sm-4 col-md-3 blockimage">
-		<div class="blockimage-wrapper">
-			<img class="blockimage-image" src="{{ block.image }}" alt="{{ block.content }}"/>
-			<div class="blockimage-caption"><p>{{ block.content }}</p></div>
+<div class="row" id="head-wrapper">
+	<div class="container">
+		<div class="col-md-6 jumbotron">
+			<h1>Elektronische Gulden</h1>
+			<p>Nieuw geld, voor een nieuw Nederland</p>
+		</div>
+	</div>
+</div>
+
+<div class="row" id="map-wrapper">
+	<div class="container">
+		<div class="col-md-offset-4 col-md-3 title">
+			<h3>Ontdek ons Netwerk</h3>
+		</div>
+	</div>
+	<div class="container">
+		<div ng-repeat="block in blocks">
+			<div class="col-xs-12 col-sm-4 col-md-3 blockimage" ng-class="{'fade-enabled' : block.fade_image != null}" >
+				<div class="blockimage-wrapper">
+					<img class="blockimage-image" ng-src="{{ block.image }}" alt="{{ block.content }}" />
+					<img ng-show="block.fade_image" class="blockimage-image-fade" ng-src="{{ block.fade_image }}" alt="{{ block.content }}" />
+
+					<div class="blockimage-caption"><p>{{ block.content }}</p></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clearfix top-spacer-5"></div>
+</div>
+
+<div class="row">
+	<div class="container">
+		<h1>Onze kernpunten</h1>
+
+		<div class="col-md-4" ng-repeat="point in corePoints">
+			<div class="col-md-3">
+				<div class="icon-circled">
+					<span class="glyphicon glyphicon-{{ point.icon }}"></span>
+				</div>
+			</div>
+			<div class="col-md-9">
+				<h4>{{ point.title }}</h4>
+				<p>{{ point.description }}</p>
+			</div>
 		</div>
 	</div>
 </div>

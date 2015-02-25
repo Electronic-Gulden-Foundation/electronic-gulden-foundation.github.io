@@ -1,21 +1,73 @@
-.blockimage-image {
-	width:      100%;
+.top-spacer-5 {
 	margin-top: 5px;
 }
-.blockimage-wrapper {
-	float:    left;
-	position: relative;
-	width:    100%;
+.top-spacer-10 {
+	margin-top: 10px;
 }
-.blockimage-caption {
+
+.navbar-brand {
+	padding: 5px;
+}
+
+#head-wrapper {
+	color: #E7E7E7;
+	background: url('../img/head-background.png') no-repeat bottom right;
+	background-color: #002366;
+}
+#head-wrapper .jumbotron {
+	background: none;
+}
+
+#map-wrapper {
+	background-color: #F7F7F7;
+}
+#map-wrapper .blockimage-wrapper {
+	margin-top: 5px;
+	position:   relative;
+	width:      100%;
+}
+#map-wrapper .blockimage-wrapper img {
+	width:              100%;
+	height:             100%;
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition:    opacity 1s ease-in-out;
+	-o-transition:      opacity 1s ease-in-out;
+	transition:         opacity 1s ease-in-out;
+}
+#map-wrapper .blockimage-wrapper .blockimage-caption {
 	position: absolute;
 	bottom:   0;
 	width:    100%;
 }
-.blockimage-caption p {
+#map-wrapper .blockimage-wrapper .blockimage-caption p {
 	margin:           0;
 	color:            #D0D0D0;
 	padding:          5px;
 	background-color: black;
 	opacity:          0.8;
+}
+#map-wrapper .blockimage-wrapper .blockimage-image-fade {
+	position: absolute;
+	top:      0;
+	left:     0;
+	opacity:  0;
+}
+#map-wrapper .blockimage.fade-enabled:hover .blockimage-image {
+	opacity:  0;
+}
+#map-wrapper .blockimage.fade-enabled:hover .blockimage-image-fade {
+	opacity: 1;
+}
+
+.icon-circled {
+	text-align: center;
+	background-color: red;
+	border-radius: 50%;
+	width: 70px;
+	height: 70px;
+}
+.icon-circled span {
+	margin-top: 20px;
+	font-size: 30px;
+	color: white;
 }

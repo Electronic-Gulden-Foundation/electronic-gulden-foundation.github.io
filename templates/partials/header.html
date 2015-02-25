@@ -1,0 +1,23 @@
+<nav class="navbar navbar-default navbar-static">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main">
+				<span class="sr-only">Toon/verberg navigatie</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#/">
+				<img src="/img/logo.png" />
+			</a>
+		</div>
+
+		<div class="collapse navbar-collapse" id="navbar-main">
+			<ul class="nav navbar-nav">
+				<li ng-repeat="item in headerCtrl.links" ng-class="{'active' : headerCtrl.itemIsActive(item)}">
+					<a ng-href="#{{ item.url }}">{{ item.text }}</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
