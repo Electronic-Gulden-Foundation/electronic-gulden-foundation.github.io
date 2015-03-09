@@ -33,9 +33,28 @@ angular.module('egulden.directives.partials', [])
     return {
         templateUrl  : 'templates/partials/footer.html',
         controllerAs : 'footerCtrl',
-        controller   : function() {
-            this.eguldenDonationAddress = 'someEFLDonationAddress';
-            this.bitcoinDonationAddress = 'someBTCDonationAddress';
+        controller   : function($scope) {
+            this.eguldenDonationAddress = 'LdCn2NRMpqeWXMMDWdeNs87mZz5tfhkTpZ';
+            this.bitcoinDonationAddress = '1HMLhw9ZqPpLzE4BT7CaQxPx6Ghb9mhb3R';
+
+            this.links = [
+                {
+                    text : 'Home',
+                    url  : '/'
+                },
+                {
+                    text : 'Wie zijn we',
+                    url  : '/wiezijnwe'
+                },
+                {
+                    text : 'Vrienden',
+                    url  : '/vrienden'
+                },
+                {
+                    text : 'Contact',
+                    url  : '/contact'
+                }
+            ];
 
             this.linkCols = [
                 {
@@ -65,6 +84,19 @@ angular.module('egulden.directives.partials', [])
                         {
                             title : 'Europex',
                             url   : 'http://europex.eu/#!coin/btc/efl'
+                        }
+                    ]
+                },
+                {
+                    title : 'More',
+                    links : [
+                        {
+                            title : 'Coinmarketcap',
+                            url   : 'http://coinmarketcap.com/currencies/electronic-gulden/'
+                        },
+                        {
+                            title : 'Github',
+                            url   : 'https://github.com/Electronic-Gulden-Foundation'
                         }
                     ]
                 }
