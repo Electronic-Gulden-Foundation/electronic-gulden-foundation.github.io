@@ -1,4 +1,24 @@
 <div id="footer" class="container-fluid">
+	<div class="row">
+		<nav class="navbar navbar-static navbar-inverse" id="navbar-footer">
+			<div class="container">
+			<ul class="nav navbar-nav">
+				<li ng-repeat="item in footerCtrl.links" ng-class="{'active' : footerCtrl.itemIsActive(item)}">
+					<a ng-href="#{{ item.url }}">{{ item.text }}</a>
+				</li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="" class="back-to-top" onclick="window.scroll(0,0)">
+						<span class="sr-only">Terug omhoog</span>
+						<span class="glyphicon glyphicon-arrow-up"></span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+
 	<div class="container">
 		<div class="col-md-6">
 			<h3>Donaties</h3>
@@ -23,5 +43,22 @@
 				</ul>
 			</div>
 		</div>
+
+
+		<div class="col-md-12">
+			<hr />
+
+			<div class="col-md-4">
+				&copy; 2014-2015 - Electronic Gulden Foundation
+			</div>
+			<div class="col-md-4 text-center">
+				<a href="/#/privacy">Privacy verklaring</a>
+			</div>
+			<div class="col-md-4 text-right">
+				<a href="/#/nieuwsbrief">Aanmelden nieuwsbrief</a>
+			</div>
+		</div>
+
+		<div class="clearfix top-spacer-10"></div>
 	</div>
 </div>
