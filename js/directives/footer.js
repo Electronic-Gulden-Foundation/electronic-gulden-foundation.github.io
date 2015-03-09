@@ -1,33 +1,6 @@
 'use strict';
 
-angular.module('egulden.directives.partials', [])
-
-.directive('ngHeader', function() {
-    return {
-        templateUrl  : 'templates/partials/header.html',
-        controllerAs : 'headerCtrl',
-        controller   : function($location) {
-            this.itemIsActive = function(item) {
-                return (item.url == $location.path());
-            };
-
-            this.links = [
-                {
-                    text : 'Wie zijn we',
-                    url  : '/wiezijnwe'
-                },
-                {
-                    text : 'Vrienden',
-                    url  : '/vrienden'
-                },
-                {
-                    text : 'Contact',
-                    url  : '/contact'
-                }
-            ];
-        }
-    }
-})
+angular.module('egulden.directives')
 
 .directive('ngFooter', function() {
     return {
@@ -36,6 +9,10 @@ angular.module('egulden.directives.partials', [])
         controller   : function($scope) {
             this.eguldenDonationAddress = 'LdCn2NRMpqeWXMMDWdeNs87mZz5tfhkTpZ';
             this.bitcoinDonationAddress = '1HMLhw9ZqPpLzE4BT7CaQxPx6Ghb9mhb3R';
+
+            this.itemIsActive = function(item) {
+                return (item.url == $location.path());
+            };
 
             this.links = [
                 {

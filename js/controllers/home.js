@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('egulden.controllers', ['ngRoute'])
+angular.module('egulden.controllers')
 
 .config(['$routeProvider', function($routeProvider) {
     $routeProvider.when('/', {
