@@ -1,55 +1,61 @@
 {
     "blocks" : [
-        {
-            "content" : "Test 123",
-            "image"   : "/img/map/map-empty.png"
-        },
-        {
-            "content"    : "Egulden Downloaden",
-            "image"      : "/img/map/map2.png",
-            "fade_image" : "/img/map/map3.png"
-        },
-        {
-            "content" : "Egulden kopen",
-            "image"   : "/img/map/map3.png"
-        },
-        {
-            "content" : "Doneren",
-            "image"   : "/img/map/map4.png",
-            "fade_image" : "/img/map/map3.png"
-        },
-        {
-            "content" : "Campagnes",
-            "image"   : "/img/map/map5.png"
-        },
-        {
-            "content" : "Campagnes",
-            "image"   : "/img/map/map6.png"
-        },
-        {
-            "content" : "Spaarplan",
-            "image"   : "/img/map/map7.png",
-            "fade_image" : "/img/piggy.png"
-        },
-        {
-            "content" : "Campagnes",
-            "image"   : "/img/map/map8.png"
-        },
-        {
-            "content" : "Campagnes",
-            "image"   : "/img/map/map9.png"
-        },
-        {
-            "content" : "Campagnes",
-            "image"   : "/img/map/map10.png"
-        },
-        {
-            "content" : "Campagnes",
-            "image"   : "/img/map/map11.png"
-        },
-        {
-            "content" : "Campagnes",
-            "image"   : "/img/map/map-empty.png"
-        }
+        [
+            {
+                "content" : "Test 123",
+                "image"   : "/img/map/map-empty.png"
+            },
+            {
+                "content"    : "Egulden Downloaden",
+                "image"      : "/img/map/map2.png",
+                "fade_image" : "/img/map/map3.png"
+            },
+            {
+                "content" : "Egulden kopen",
+                "image"   : "/img/map/map3.png"
+            },
+            {
+                "content" : "Doneren",
+                "image"   : "/img/map/map4.png",
+                "fade_image" : "/img/map/map3.png"
+            }
+        ],
+        [
+            {
+                "content" : "Campagnes",
+                "image"   : "/img/map/map5.png"
+            },
+            {
+                "content" : "Campagnes",
+                "image"   : "/img/map/map6.png"
+            },
+            {
+                "content" : "Spaarplan",
+                "image"   : "/img/map/map7.png",
+                "fade_image" : "/img/piggy.png"
+            },
+            {
+                "content" : "Campagnes",
+                "image"   : "/img/map/map8.png"
+            }
+        ],
+        [
+            {
+                "content" : "Campagnes",
+                "image"   : "/img/map/map9.png"
+            },
+            {
+                "content" : "Campagnes",
+                "image"   : "/img/map/map10.png"
+            },
+            {
+                "content" : "Campagnes",
+                "image"   : "/img/map/map11.png"
+            },
+            {
+                "content" : "Campagnes",
+                "image"   : "/img/map/map-empty.png"
+            }
+        ]
     ]
 }
