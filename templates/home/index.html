@@ -21,14 +21,18 @@
 		</div>
 	</div>
 	<div class="container">
-		<div ng-repeat="block in blocks">
-			<div class="col-xs-12 col-sm-4 col-md-3 blockimage" ng-class="{'fade-enabled' : block.fade_image != null}" >
-				<div class="blockimage-wrapper">
-					<img class="blockimage-image" ng-src="{{ block.image }}" alt="{{ block.content }}" />
-					<img ng-show="block.fade_image" class="blockimage-image-fade" ng-src="{{ block.fade_image }}" alt="{{ block.content }}" />
+		<div class="row">
+			<div class="table-responsive">
+				<table class="table table-condensed">
+					<tr ng-repeat="row in blocks">
+						<td ng-repeat="block in row" class="blockimage-wrapper" ng-class="{'fade-enabled' : block.fade_image != null}">
+							<img class="blockimage-image" ng-src="{{ block.image }}" alt="{{ block.content }}" />
+							<img ng-show="block.fade_image" class="blockimage-image-fade" ng-src="{{ block.fade_image }}" alt="{{ block.content }}" />
 
-					<div ng-show="block.content" class="blockimage-caption"><p>{{ block.content }}</p></div>
-				</div>
+							<div ng-show="block.content" class="blockimage-caption"><p>{{ block.content }}</p></div>
+						</td>
+					</tr>
+				</table>
 			</div>
 		</div>
 	</div>

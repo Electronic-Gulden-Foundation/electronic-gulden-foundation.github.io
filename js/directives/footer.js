@@ -2,7 +2,7 @@
 
 angular.module('egulden.directives')
 
-.directive('ngFooter', function() {
+.directive('ngFooter', ['$location', function($location) {
     return {
         templateUrl  : 'templates/partials/footer.html',
         controllerAs : 'footerCtrl',
@@ -80,4 +80,4 @@ angular.module('egulden.directives')
             ];
         }
     }
-});
+}]);
