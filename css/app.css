@@ -4,6 +4,9 @@
 	}
 }
 
+body {
+	padding-top: 50px;
+}
 
 .top-spacer-5 {
 	margin-top: 5px;
