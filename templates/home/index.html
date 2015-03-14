@@ -22,10 +22,12 @@
 				<table class="table table-condensed">
 					<tr ng-repeat="row in blocks">
 						<td ng-repeat="block in row" class="blockimage-wrapper" ng-class="{'fade-enabled' : block.fade_image != null}">
-							<img class="blockimage-image" ng-src="{{ block.image }}" alt="{{ block.content }}" />
-							<img ng-show="block.fade_image" class="blockimage-image-fade" ng-src="{{ block.fade_image }}" alt="{{ block.content }}" />
+							<a onclick="alert('You clicked')">
+								<img class="blockimage-image" ng-src="{{ block.image }}" alt="{{ block.content }}" />
+								<img ng-show="block.fade_image" class="blockimage-image-fade" ng-src="{{ block.fade_image }}" alt="{{ block.content }}" />
 
-							<div ng-show="block.content" class="blockimage-caption"><p>{{ block.content }}</p></div>
+								<div ng-show="block.content" class="blockimage-caption"><p>{{ block.content }}</p></div>
+							</a>
 						</td>
 					</tr>
 				</table>
