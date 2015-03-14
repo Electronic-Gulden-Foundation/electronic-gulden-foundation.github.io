@@ -29,6 +29,9 @@
 	background-color: #002366;
 }
 #head-wrapper .jumbotron {
+	padding-top: 15px;
+	padding-bottom: 30px;
+	margin: 0;
 	background: none;
 }
 
