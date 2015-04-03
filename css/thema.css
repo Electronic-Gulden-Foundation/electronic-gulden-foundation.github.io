@@ -1,0 +1,45 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300|Open+Sans);
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #606060;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Ubuntu Light', 'sans-serif';
+	color: #674600;
+}
+
+a {
+	color: #0052FF;
+}
+
+.navbar-default {
+	background-color: #FFAE01;
+}
+.navbar-default .navbar-nav > li > a {
+	color: #FFF;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+	color: #674600;
+	background-color: #FFAE01;
+}
+
+.btn-danger {
+	background-color: #FF2E00;
+}
+.btn-warning {
+	background-color: #FF6E00;
+}
+.btn-primary {
+	background-color: #0052FF;
+}
+
+.jumbotron h1, .jumbotron h2, .jumbotron h3, .jumbotron h4, .jumbotron h5, .jumbotron h6 {
+	color: #674600;
+}
